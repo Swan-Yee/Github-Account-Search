@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-space-mono text-base">
+    <div class="bg-white min-w-screen">
+      <div class="py-20 w-2/5 mx-auto">
+        <div class="header flex justify-between items-center mb-12">
+          <h1 class="text-lg font-bold text-text-white">devfinder</h1>
+          <a href="#" class="flex">
+            <p class="mr-5 font-bold text-text-white tracking-widest">DARK</p>
+            <div class="icon">
+              <img src="./assets/icon-moon.svg" alt="img" />
+            </div>
+          </a>
+        </div>
+        <main>
+          <div
+            class="flex justify-between items-center bg-content-white px-2.5 py-1.5 rounded-lg shadow-md mb-6"
+          >
+            <img src="./assets/icon-search.svg" alt="img" class="mr-5" />
+            <input
+              type="text"
+              name=""
+              placeholder="Search Github Name....."
+              class="w-100 grow focus:outline-none"
+              autocomplete="off"
+            />
+            <button
+              class="bg-btn-primary text-text-dark p-3 rounded-xl w-24 text-md tracking-wider hover:bg-btn-hover"
+            >
+              Search
+            </button>
+          </div>
+          <div class="bg-content-white rounded-lg shadow-lg">
+            <div class="p-10">
+              <div class="flex flex-row items-center">
+                <img
+                  src="https://avatars.githubusercontent.com/u/583231?v=4"
+                  alt="img"
+                  srcset="https://avatars.githubusercontent.com/u/583231?v=4"
+                  class="rounded-full w-1/3 mr-10"
+                />
+                <div class="about">
+                  <p class="text-lg font-bold">The Octocat</p>
+                  <p class="text-btn-primary">@octocat</p>
+                  <p class="text-muted font-light text-muted">
+                    Joined 25 Jan 2011
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium id ad natus vitae, temporibus ratione saepe iusto
+                  autem velit, ab magni iure vero voluptatibus, quidem rerum
+                  veniam laborum suscipit sed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
