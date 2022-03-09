@@ -8,27 +8,43 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="font-space-mono text-base">
-    <div class="bg-white min-w-screen">
-      <div class="py-20 w-2/5 mx-auto">
+    <div class="bg-white min-w-screen dark:bg-dark">
+      <div class="py-20 mx-auto w-5/6 md:w-2/3 lg:w-2/5">
         <div class="header flex justify-between items-center mb-12">
-          <h1 class="text-lg font-bold text-text-white">devfinder</h1>
-          <a href="#" class="flex">
-            <p class="mr-5 font-bold text-text-white tracking-widest">DARK</p>
+          <h1 class="text-lg font-bold text-text-white dark:text-white">
+            devfinder
+          </h1>
+          <a href="#" class="flex" id="btn-mode">
+            <p
+              class="mr-5 font-bold text-text-white dark:text-white tracking-widest"
+            >
+              DARK
+            </p>
             <div class="icon">
-              <img src="./assets/icon-moon.svg" alt="img" />
+              <img
+                src="./assets/icon-moon.svg"
+                alt="img"
+                class="block dark:hidden"
+              />
+              <img
+                src="./assets/icon-sun.svg"
+                alt="img"
+                class="hidden dark:block"
+              />
             </div>
           </a>
         </div>
         <main>
           <div
-            class="flex justify-between items-center bg-content-white px-2.5 py-1.5 rounded-lg shadow-md mb-6"
+            class="flex justify-between items-center bg-content-white px-2.5 py-1.5 rounded-lg shadow-md mb-6 dark:bg-content-dark"
           >
             <img src="./assets/icon-search.svg" alt="img" class="mr-5" />
             <input
               type="text"
               name=""
               placeholder="Search Github Name....."
-              class="w-100 grow focus:outline-none"
+              placeholder="placeholder"
+              class="w-100 grow focus:outline-none placeholder-size dark:bg-content-dark dark:caret-white dark:text-white"
               autocomplete="off"
             />
             <button
@@ -37,8 +53,10 @@
               Search
             </button>
           </div>
-          <div class="bg-content-white rounded-lg shadow-lg">
-            <div class="p-10">
+          <div
+            class="bg-content-white rounded-lg shadow-lg dark:bg-content-dark dark:text-white"
+          >
+            <div class="p-5 md:p-10">
               <div class="flex flex-row items-center">
                 <img
                   src="https://avatars.githubusercontent.com/u/583231?v=4"
@@ -47,25 +65,73 @@
                   class="rounded-full w-1/3 mr-10"
                 />
                 <div class="about">
-                  <p class="text-lg font-bold">The Octocat</p>
-                  <p class="text-btn-primary">@octocat</p>
-                  <p class="text-muted font-light text-muted">
+                  <p class="text-xl font-bold">The Octocat</p>
+                  <p class="text-btn-primary dark:text-white">@octocat</p>
+                  <p class="text-muted font-bold dark:text-white">
                     Joined 25 Jan 2011
                   </p>
                 </div>
               </div>
               <div>
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium id ad natus vitae, temporibus ratione saepe iusto
-                  autem velit, ab magni iure vero voluptatibus, quidem rerum
-                  veniam laborum suscipit sed.
+                <p class="text-muted my-8 dark:text-white">
+                  This profile has no bio
                 </p>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center p-5 rounded-lg shadow-sm dark:bg-dark"
+              >
+                <div>
+                  <p class="text-muted dark:text-white">Repos</p>
+                  <p class="font-bold text-lg">8</p>
+                </div>
+                <div>
+                  <p class="text-muted dark:text-white">Followers</p>
+                  <p class="font-bold text-lg">10000</p>
+                </div>
+                <div>
+                  <p class="text-muted dark:text-white">Following</p>
+                  <p class="font-bold text-lg">10</p>
+                </div>
+              </div>
+              <div class="grid gap-4 grid-cols-2 gap-x-8 mt-5">
+                <div class="flex">
+                  <img
+                    src="./assets/icon-location.svg"
+                    alt="img"
+                    class="inline mr-5"
+                  />
+                  <p class="text-muted dark:text-white">Yangon</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="./assets/icon-twitter.svg"
+                    alt="img"
+                    class="inline mr-5"
+                  />
+                  <p class="text-muted dark:text-white">Yangon</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="./assets/icon-website.svg"
+                    alt="img"
+                    class="inline mr-5"
+                  />
+                  <p class="text-muted dark:text-white">Yangon</p>
+                </div>
+                <div class="flex opacity-50">
+                  <img
+                    src="./assets/icon-company.svg"
+                    alt="img"
+                    class="inline mr-5"
+                  />
+                  <p class="text-muted dark:text-white">Not Avaliable</p>
+                </div>
               </div>
             </div>
           </div>
         </main>
       </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

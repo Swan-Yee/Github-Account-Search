@@ -1,16 +1,17 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     colors: {
       white: "#F6F8FF",
       dark: "#141D2F",
-      "content-dark": "#141d2f",
+      "content-dark": "#1E2A47",
       "content-white": "#FEFEFE",
       "text-white": "#4B6A9B",
       "text-dark": "#FFFFFF",
       "btn-primary": "#0079FF",
       "btn-hover": "#60ABFF",
-      muted: "color: rgb(148, 163, 184)",
+      muted: "rgb(100,116,139)",
     },
     boxShadow: {
       md: "0px 4px 4px 0px rgba(0,0,0,0.25)",
@@ -22,6 +23,7 @@ module.exports = {
     fontSize: {
       base: "15px",
       lg: "25px",
+      xl: "28px",
     },
   },
   plugins: [],
