@@ -67,7 +67,6 @@ function insertData(data) {
   if (data.message != "Not Found") {
     function checkNull(para1, para2) {
       if (para1 == null || para1 == "") {
-        console.log(para2.parentElement);
         para2.parentElement.classList.add("opacity-50");
         return "Not available";
       } else {
