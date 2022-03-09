@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="font-space-mono text-base">
-    <div class="bg-white min-w-screen dark:bg-dark">
+    <div class="bg-white min-w-screen min-h-screen dark:bg-dark">
       <div class="py-20 mx-auto w-5/6 md:w-2/3 lg:w-2/5">
         <div class="header flex justify-between items-center mb-12">
           <h1 class="text-lg font-bold text-text-white dark:text-white">
@@ -46,9 +46,11 @@
               placeholder="placeholder"
               class="w-100 grow focus:outline-none placeholder-size dark:bg-content-dark dark:caret-white dark:text-white"
               autocomplete="off"
+              id="input-search"
             />
             <button
               class="bg-btn-primary text-text-dark p-3 rounded-xl w-24 text-md tracking-wider hover:bg-btn-hover"
+              id="btn-search"
             >
               Search
             </button>
@@ -59,38 +61,42 @@
             <div class="p-5 md:p-10">
               <div class="flex flex-row items-center">
                 <img
-                  src="https://avatars.githubusercontent.com/u/583231?v=4"
+                  src=""
                   alt="img"
-                  srcset="https://avatars.githubusercontent.com/u/583231?v=4"
                   class="rounded-full w-1/3 mr-10"
+                  id="image"
                 />
                 <div class="about">
-                  <p class="text-xl font-bold">The Octocat</p>
-                  <p class="text-btn-primary dark:text-white">@octocat</p>
-                  <p class="text-muted font-bold dark:text-white">
-                    Joined 25 Jan 2011
-                  </p>
+                  <p class="text-xl font-bold" id="name"></p>
+                  <a
+                    href=""
+                    class="text-btn-primary dark:text-white"
+                    id="userName"
+                  >
+                  </a>
+                  <p
+                    class="text-muted font-bold dark:text-white"
+                    id="joinedDate"
+                  ></p>
                 </div>
               </div>
               <div>
-                <p class="text-muted my-8 dark:text-white">
-                  This profile has no bio
-                </p>
+                <p class="text-muted my-8 dark:text-white" id="bio"></p>
               </div>
               <div
                 class="bg-white flex justify-between items-center p-5 rounded-lg shadow-sm dark:bg-dark"
               >
                 <div>
                   <p class="text-muted dark:text-white">Repos</p>
-                  <p class="font-bold text-lg">8</p>
+                  <p class="font-bold text-lg" id="repo"></p>
                 </div>
                 <div>
                   <p class="text-muted dark:text-white">Followers</p>
-                  <p class="font-bold text-lg">10000</p>
+                  <p class="font-bold text-lg" id="followers"></p>
                 </div>
                 <div>
                   <p class="text-muted dark:text-white">Following</p>
-                  <p class="font-bold text-lg">10</p>
+                  <p class="font-bold text-lg" id="following"></p>
                 </div>
               </div>
               <div class="grid gap-4 grid-cols-2 gap-x-8 mt-5">
@@ -100,7 +106,7 @@
                     alt="img"
                     class="inline mr-5"
                   />
-                  <p class="text-muted dark:text-white">Yangon</p>
+                  <p class="text-muted dark:text-white" id="user_location"></p>
                 </div>
                 <div class="flex">
                   <img
@@ -108,7 +114,7 @@
                     alt="img"
                     class="inline mr-5"
                   />
-                  <p class="text-muted dark:text-white">Yangon</p>
+                  <p class="text-muted dark:text-white" id="twitter"></p>
                 </div>
                 <div class="flex">
                   <img
@@ -116,15 +122,15 @@
                     alt="img"
                     class="inline mr-5"
                   />
-                  <p class="text-muted dark:text-white">Yangon</p>
+                  <p class="text-muted dark:text-white" id="website"></p>
                 </div>
-                <div class="flex opacity-50">
+                <div class="flex">
                   <img
                     src="./assets/icon-company.svg"
                     alt="img"
                     class="inline mr-5"
                   />
-                  <p class="text-muted dark:text-white">Not Avaliable</p>
+                  <p class="text-muted dark:text-white" id="company"></p>
                 </div>
               </div>
             </div>
